@@ -1,13 +1,24 @@
 class Power extends ConsoleProgram {
 
   /**
-  * Description
-  * @author:
+  * Print a,b as a^b
+  * @author: Elijah Sen
   */
   
   public void run() {
-    
-    // start coding here
-    
+    // Establish Variables
+    double dblValueA;
+    double dblValueB;
+    double dblProduct;
+
+    // Gather User Inputs
+    dblValueA = readInt("Enter a value for A: ");
+    dblValueB = readInt("Enter a value for B: ");
+
+    // Calculate
+    dblProduct = Math.pow(dblValueA, dblValueB);
+
+    // Display Answer
+    System.out.println(dblValueA + " to the power of " + dblValueB + " equals " + dblProduct);
   }
 }
