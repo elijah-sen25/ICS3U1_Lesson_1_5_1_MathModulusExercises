@@ -5,28 +5,26 @@ class AreaSin extends ConsoleProgram {
   */
   
   public void run() {
-    // Declare Variables
-      double dblSideA;
-      double dblSideB;
-      double dblAngleC;
-      double dblSideC;
+   
+    // Establish Variables
+    double dblSideA;
+    double dblSideB;
+    double dblAngleC;
+    double dblArea;
 
-    // Gather User Input
+    // Gather User Prompts
+    dblSideA = readDouble("Enter the length of Side A: ");
+    dblSideB = readDouble("Enter the length of Side B: ");
+    dblAngleC = readDouble("Enter the degree of Angle C: ");
 
-      dblSideA = readDouble("Enter a value for A: ");
-      dblSideB = readDouble("Enter a value for B: ");
-      dblAngleC = readDouble("Enter a value for the given angle: ");
-
-
-    // Calculate Cosine Law
-
-      dblSideC = Math.sqrt(Math.pow(dblSideA, 2) + Math.pow(dblSideB, 2) - 2 * dblSideA * dblSideB * Math.cos(dblAngleC));
+    // Calculate the Area
+    
+    dblArea = (dblSideA * dblSideB * Math.sin(dblAngleC)) / 2;
 
     // Display Answer
 
-      System.out.println("The Value of Side C is " + dblSideC);
-      
-    
+    System.out.println("The area of the triangle is " + dblArea);
+
   
   }
 }
