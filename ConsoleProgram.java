@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ConsoleProgram{
+public class ConsoleProgram {
 
     private Scanner scanner;
 
