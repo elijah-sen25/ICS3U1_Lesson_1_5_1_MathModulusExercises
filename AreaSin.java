@@ -1,8 +1,7 @@
 class AreaSin extends ConsoleProgram {
 
   /**
-  * Description
-  * @author:
+  * @author:Elijah Sen
   */
   
   public void run() {
